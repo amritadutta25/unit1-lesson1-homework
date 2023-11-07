@@ -5,6 +5,7 @@
 # Create a new directory on your desktop called `galaxy_far_far_away`and enter it
 cd Desktop
 mkdir galaxy_far_far_away
+cd galaxy_far_far_away
 
 # Create a directory called `death_star`
 mkdir death_star
@@ -38,7 +39,7 @@ touch han_solo.txt chewbaca.txt
 mv ~/Desktop/galaxy_far_far_away/tatooine/ben_kenobi.txt ~/Desktop/galaxy_far_far_away/tatooine/obi_wan.txt
 
 # Copy `storm_trooper.txt` from `death_star` to `tatooine`
-cp ~/Desktop/death_star/storm_trooper.txt ~/Desktop/galaxy_far_far_away/tatooine/
+cp ~/Desktop/galaxy_far_far_away/death_star/storm_trooper.txt ~/Desktop/galaxy_far_far_away/tatooine/
 
 # Move `luke.txt` and `obi_wan.txt` to the `millenium_falcon`
 cd 
@@ -51,10 +52,10 @@ mv obi_wan.txt millenium_falcon
 mv millenium_falcon ..
 
 # Move `millenium_falcon` into `death_star`
-mv ~/Desktop/galaxy_far_far_away/millenium_falcon ~/Desktop/death_star
+mv ~/Desktop/galaxy_far_far_away/millenium_falcon ~/Desktop/galaxy_far_far_away/death_star
 
 # Move `princess_leia.txt` into the `millenium_falcon`
-cd ~/Desktop/death_star
+cd ~/Desktop/galaxy_far_far_away/death_star
 mv princess_leia.txt millenium_falcon
 
 # Delete `obi_wan.txt`
@@ -66,7 +67,7 @@ cd Desktop/galaxy_far_far_away # get into galaxy_far_far_away folder
 mkdir yavin_4
 
 # Move the `millenium_falcon` out of the `death_star` and into `yavin_4`
-mv ~/Desktop/death_star/millenium_falcon ~/Desktop/galaxy_far_far_away/yavin_4
+mv ~/Desktop/galaxy_far_far_away/death_star/millenium_falcon ~/Desktop/galaxy_far_far_away/yavin_4
 
 # Make a directory in `yavin_4` called `x_wing`
 cd ~/Desktop/galaxy_far_far_away/yavin_4
@@ -83,11 +84,11 @@ mv ~/Desktop/galaxy_far_far_away/yavin_4/x_wing .. # while in yavin_4 folder
 
 # In `death_star`, create directories for `tie_fighter_1`, `tie_fighter_2` and `tie_fighter_3`
 cd
-cd ~/Desktop/death_star
+cd ~/Desktop/galaxy_far_far_away/death_star
 mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
 
 # Move `darth_vader.txt` into `tie_fighter_1`
- mv ~/Desktop/death_star/darth_vader.txt tie_fighter_1 # while in death_star folder
+ mv ~/Desktop/galaxy_far_far_away/death_star/darth_vader.txt tie_fighter_1 # while in death_star folder
 
 
 
@@ -122,7 +123,7 @@ touch the_force.txt
 # Destroy the "**death_star**" and anyone inside of it.
 cd 
 cd Desktop
-rm -r ~/Desktop/death_star
+rm -r ~/Desktop/galaxy_far_far_away/death_star
 
 # Return "**x_wing**" and the "**millenium_falcon**" to "**yavin_4**".
 cd ~/Desktop/galaxy_far_far_away
