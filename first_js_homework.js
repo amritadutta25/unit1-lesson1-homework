@@ -1,4 +1,4 @@
-// Section 1 
+// -------------------------- Section 1 --------------------------
 
 /* 1. DRY stands for 'Don't Repeat Yourself'.
 DRY principle should be followed to improve efficiency. This principle prevents code duplication
@@ -15,7 +15,7 @@ Programming tools to write DRY code are for loops, while loops and functions.
 */ 
 
 
-// Section 2
+// --------------------- Section 2 ----------------------------
 
 {
 const a = 4;
@@ -52,9 +52,11 @@ console.log(g);
 // 3. 
 // 10 = g;
 // we get a syntax error - SyntaxError: Invalid left-hand side in assignment. In JavaScript, left hand side is treated as a variable name.
-// So here. 10 is read as a variable name but variable name cannot start with a number and hence the SyntaxError.
+// So here, 10 is read as a variable name but variable name cannot start with a number and hence the SyntaxError. g is actually the variable name 
+// and 10 is the value to be assigned to g.
+// Correct statement would be: g = 10;
 
-//  Section 3
+//  ---------------------------- Section 3 -----------------------------
 
 /*
 
@@ -74,7 +76,7 @@ while (runProgram) {
 }
 
 This is not an infinite loop because in first iteration inside the loop we try to re-assign runProgram which was earlier declared 
-as a const variable so this throws a TypeError. 
+as a const variable and const variables cannot be re-assigned and hence this throws a TypeError. 
 
 Now assuming, runProgram was initially declared with 'let' then, in the first iteration runProgram === true and 
 the loop gets executed but inside the loop runProgram is assigned false, so the second iteration never takes place so this is not an infinite loop.
@@ -82,6 +84,9 @@ the loop gets executed but inside the loop runProgram is assigned false, so the 
 The output is:
 Do not run this loop
 */
+
+
+// Reading code
 {
 // declare a variable 'letters' with let annd assign its valus as 'A'
 let letters = "A";
@@ -103,13 +108,13 @@ console.log(letters);
 
 
 // Expected result: 'AAAAAAAAAAAAAAAAAAAAA'
-// In each iteration, 'A' is concatenated to 'letters'. Before the loop stars, letter = 'A'. The loop is executed 20 times, so 'A' gets
+// In each iteration, 'A' is concatenated to 'letters'. Before the loop stars, letters = 'A'. The loop is executed 20 times, so 'A' gets
 // concatenated to 'letters' 20 times. Hence, the final output is a string with 'A' 21 times.
 
 // Yes, the actual result is same as expected which is a string of 'A' 21 times.
 
 
-// Section 4
+// ------------------------- Section 4 ----------------------------------
 
 // For loops -----
 /*
@@ -142,12 +147,12 @@ Both for loop and whole loop are used to execute same peice of code multiple tim
 such that the code block gets executed only when the condition is true.
 */
 
-// For loop control panel -----
+// For loop control panel
 /*
 The first part of the control panel is: Initializes the looping variable/counter 
-The second part of the control panel is: testing condition. If condition is true, the code block inside the loop gets executed, if false it moves 
+The second part of the control panel is: Testing condition. If condition is true, the code block inside the loop gets executed, if false it moves 
 to the next iteration or if it was the last iteration then loop gets terminated. 
-The third part of the control panel is: Updated the looping variable or counter to move to the next iteration
+The third part of the control panel is: Updates the looping variable or counter to move to the next iteration
 */
 
 /*
